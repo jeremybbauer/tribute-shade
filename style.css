@@ -46,21 +46,112 @@ img {
 }
 
 #tribute-info {
+	float: center;
+}
+
+.container {
+	width: 80%;
 	background-color: #FFDCED;
 	margin-top: 20px;
 	margin-left: 50px;
-	padding: 50px;
-}
-
-#basic-info {
-	margin-top: 25px;
-	max-width: 100px;
-	height: 100%;
-	background-color: #FFF9F3;
-	border: 5px solid white;
- 	background: white;
+	margin-right: 50px;
+	margin-bottom: 70px;
+	padding: 10px;
+	border: 0.5px solid white;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	border-radius: 5px;
-	float: left;
-	position: relative;
+	display: grid;
+	grid-template-columns: auto 100px;
+	grid-template-rows: auto auto auto;
+	grid-gap: 10px;
+	grid-template-areas:
+		"content info"
+		"content content"
+		"content content"
+}
+
+.item1 {
+	grid-area: content;
+}
+
+.item2 {
+	grid-area: info;
+	background: #FFF9F3;
+	margin-top: 25px;
+	max-width: 250px;
+	height: 100%;
+	display: grid;
+	border: 5px solid white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: repeat(7, auto);
+	grid-gap: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.itemOne {
+}
+
+.itemOneInfo {
+}
+
+.itemTwo {
+}
+
+.itemTwoInfo {
+}
+
+.itemThree {
+	
+}
+
+.itemThreeInfo {
+	
+}
+
+.itemFour {
+	
+}
+
+.itemFourInfo {
+	
+}
+
+.itemFive {
+	
+}
+
+.itemFiveInfo {
+	
+}
+
+.itemSix {
+	
+}
+
+.itemSixInfo {
+	
+}
+
+.itemSeven {
+	
+}
+
+.itemSevenInfo {
+	
+}
+
+#about {
+	width: auto;
+}
+		#about h2 {
+			font-family: 'Nunito Sans', sans-serif;
+			font-size: 36px;
+			font-weight: 800;
+			color: #041519;
+			padding: 10px;
+			letter-spacing: 0.15em;
+			line-height: 3.5em;
 }
